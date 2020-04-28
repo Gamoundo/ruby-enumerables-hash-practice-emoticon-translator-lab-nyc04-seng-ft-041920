@@ -5,8 +5,7 @@ def load_library
   # code goes here
   loaded = {}
   emotions.each do |key, value|
-    emotions[key][0] = (:english => value[0])
-    emotions[key][1] = (:japanese => value[1])
+    emotions[key] = {:english => value[0], :japanese => value[1]}
     loaded[key] = emotions[key]
   end
 return  loaded
