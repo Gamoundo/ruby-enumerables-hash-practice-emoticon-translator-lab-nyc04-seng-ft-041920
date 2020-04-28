@@ -18,6 +18,8 @@ def get_japanese_emoticon(library, emoticon)
   emotions.each do |key, value|
     if emotions[key][:english] == emoticon
       return emotions[key][:japanese]
+    else
+      
 end
 
 def get_english_meaning
