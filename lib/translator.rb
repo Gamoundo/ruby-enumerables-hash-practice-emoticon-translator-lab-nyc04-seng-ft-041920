@@ -1,4 +1,5 @@
-# require modules here
+require "yaml"
+emotions = YAML.load_file('emotions.yml')
 
 def load_library
   # code goes here
