@@ -14,7 +14,9 @@ end
 
 def get_japanese_emoticon(library, emoticon)
   # code goes here
-  load_library(library)
+  emotions = load_library(library)
+  emotions.each do |key, value|
+    if emotions[key]
 end
 
 def get_english_meaning
