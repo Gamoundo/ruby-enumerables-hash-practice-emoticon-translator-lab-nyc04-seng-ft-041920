@@ -12,9 +12,9 @@ def load_library(library)
 return  loaded
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(library, emoticon)
   # code goes here
-  
+  load_library(library)
 end
 
 def get_english_meaning
