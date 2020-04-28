@@ -29,7 +29,7 @@ def get_english_meaning(library, emoticon)
    emotions = load_library(library)
   emotions.each do |key, value|
     if emotions[key][:japanese] == emoticon
-      return emotions[key]
+      return key
   end
   
   end
