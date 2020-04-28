@@ -19,7 +19,7 @@ def get_japanese_emoticon(library, emoticon)
     if emotions[key][:english] == emoticon
       return emotions[key][:japanese]
     else
-      return "Sorry that is not a known emoticon"
+      return "Sorry, that emoticon was not found"
     end
   end
 end
