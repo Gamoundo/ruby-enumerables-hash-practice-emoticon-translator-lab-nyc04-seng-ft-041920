@@ -1,8 +1,9 @@
 require "yaml"
-emotions = YAML.load_file('lib/emoticons.yml')
 
-def load_library
+
+def load_library(library)
   # code goes here
+  emotions = YAML.load_file(library)
   loaded = {}
   emotions.each do |key, value|
     emotions[key] = {:english => value[0], :japanese => value[1]}
